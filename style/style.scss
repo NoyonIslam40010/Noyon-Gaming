@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@mixin transition($value) {
+    transition: all $value ease-in-out;
+    -webkit-transition: all $value ease-in-out;
+    -moz-transition: all $value ease-in-out;
+    -ms-transition: all $value ease-in-out;
+    -o-transition: all $value ease-in-out;
+}
+
+@mixin border-radius($value) {
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
+
+@mixin transform($value) {
+    transform: $value;
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -o-transform: $value;
+}
+
+$noyon:#FF42A5;
+
+img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    padding: 0px 60px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.btn {
+    margin-top: 20px;
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    border: none;
+
+    a {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    @include transition(.5s);
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 2.2222222222222222e+55px;
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    a {
+        text-decoration: none;
+    }
+}
+
+.color {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    color: #00000000;
+}
+
+
+.color_2 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+}
+
+
+p,
+.items {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 150% */
+}
+
+
+// ==================== Header_section ==========================
+
+
+
+
+.Header_section {
+    padding: 30px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .had_img {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 80px;
+            }
+
+            h1 {
+                color: #0B0223;
+                font-weight: 800;
+                font-size: 30px;
+
+                span {
+                    color: $noyon;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .had_title {
+            ul {
+                display: flex;
+                align-items: center;
+
+                a {
+                    margin-left: 20px;
+                    color: #3C354F;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                .Youtube_icon {
+                    margin-left: 20px;
+                    background: rgba(11, 2, 35, 0.10);
+                    padding: 15px;
+                    @include border-radius(8px);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #3C354F;
+
+                    img {
+                        width: 20px;
+                        margin-left: 10px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+// ===================== bennar_section ==========================
+
+
+
+.Bennar_section {
+    .ban_con {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        .ban_title {
+
+            .btn {
+                margin-top: 20px;
+                display: inline-flex;
+                padding: 21px 40px;
+                align-items: flex-start;
+                gap: 10px;
+                border-radius: 48px;
+                background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+                border: none;
+
+                a {
+                    color: #FFF;
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+
+            h2 {
+                margin-top: 200px;
+                color: #0B0223;
+                font-size: 48px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                font-size: 95px;
+                font-weight: 800;
+                text-transform: uppercase;
+                background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+                background-clip: text;
+                color: #00000000;
+            }
+        }
+
+        .icon_title {
+            display: block;
+
+            h4 {
+                margin: 0 a;
+
+                i {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                line-height: 35px;
+                color: #534C64;
+                font-size: 20px;
+                font-weight: 500;
+                text-transform: lowercase;
+            }
+        }
+
+    }
+}
+
+
+
+// ===================== bennar_section ==========================
+
+
+
+
+.Gamer_section {
+    margin-top: 50px;
+
+    .gam_con {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+
+        * {
+            text-align: right;
+        }
+
+        .Gma_title {
+            p {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: #534C64;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+
+            .con {
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+
+// ===================== bennar_section ==========================
+
+
+
+
+.Online_Games_section {
+
+    .bors {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 25px;
+        grid-gap: 25px;
+
+
+        .borx {
+            cursor: pointer;
+
+            .img {
+                @include border-radius(22px);
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                border: 5px solid #ffffff;
+                display: flex;
+
+                img {
+                    width: 100%;
+                }
+
+                .Watch_Now {
+                    box-sizing: border-box;
+                    @include transform(scale(5));
+                    top: 0;
+                    position: absolute;
+                    background-color: #0000008a;
+                    height: 100%;
+                    width: 100%;
+                    @include border-radius(16px);
+                    opacity: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+                    i {
+                        font-size: 50px;
+                        color: #ffffff;
+                    }
+
+                    h4 {
+                        margin-top: 10px;
+                        color: $noyon;
+                    }
+                }
+            }
+
+            .img:hover {
+                .Watch_Now {
+                    opacity: 1;
+                    @include transform(scale(1));
+                }
+            }
+        }
+    }
+}
+
+
+// ===================== Instantly_section ==========================
+
+
+.Instantly_section {
+    margin-top: 100px;
+
+    .Installs {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        justify-content: space-between;
+
+        .int_decs {
+            display: flex;
+            justify-content: end;
+        }
+
+        .sab_conten {
+            max-width: 400px;
+            text-align: right;
+        }
+
+        .inst_imgs {
+            display: flex;
+            justify-content: end;
+
+            .img_main {
+                position: relative;
+                width: 70%;
+
+                .man_img {
+                    width: 100%;
+                }
+
+                .img_sub {
+                    display: flex;
+                    align-items: end;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 20%;
+                    right: 25%;
+
+                    .sub_img {
+                        width: 50%;
+                        height: 55%;
+                    }
+                }
+            }
+        }
+    }
+
+    #Installs {
+        justify-content: space-between;
+        grid-template-columns: 2fr 1fr;
+        margin-top: 200px;
+
+        .inst_imgs {
+            display: flex;
+            justify-content: start;
+
+            .img_main {
+                position: relative;
+                width: 80%;
+
+                .man_img {
+                    width: 100%;
+                }
+
+                .img_sub {
+                    display: flex;
+                    align-items: end;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 20%;
+                    left: 70%;
+
+                    .sub_img {
+                        width: 50%;
+                        height: 55%;
+                    }
+                }
+            }
+        }
+
+
+
+
+        .sab_conten {
+            max-width: 400px;
+            text-align: left;
+
+            .sab_title {
+                font-size: 70px;
+            }
+        }
+
+        .int_decs {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+        }
+    }
+}
+
+
+// ===================== Carear_section ==========================
+
+.Carear_section {
+    margin-top: 300px;
+    max-width: 100%;
+    background-color: #FF42A5;
+
+    .careers_containen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .career_desc {
+            display: flex;
+            margin-left: 250px;
+            max-width: 730px;
+            align-items: center;
+
+            .listed_feture {
+                margin-top: 40px;
+            }
+
+            .sec_desc {
+                font-size: 25px;
+                line-height: 40px;
+            }
+
+            * {
+                color: #ffffff;
+            }
+
+            .sec_desc {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+// ===================== Footer_section ==========================
+
+
+.Footer_section {
+    .career_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        background-color: #0B0223;
+
+        * {
+            color: #ffffff;  
+             margin-top: 30px;
+        }
+
+        .had_img  {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 100px;
+            }
+
+            h1 {
+                color: #ffffff;
+                font-weight: 800;
+                font-size: 50px;
+            }
+        }
+        
+        .fo_manu ,.fo_social_link ,.fo_imp_links{
+            display: flex;
+
+            text-align: center;
+            .fo_link{
+                font-size: 30px;
+                margin-left: 40px;
+                font-weight: 600;
+                color: #ffffff;
+            }
+        }
+
+        .fo_imp_links{
+           .fo_link{
+            font-size: 25px;
+           }
+
+        }
+
+        .fo_social_link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                margin-left: 30px;
+                font-size: 60px;
+            }
+        }
+
+        .fo_link,i:hover{
+            color: $noyon;
+        }
+    }
+}
