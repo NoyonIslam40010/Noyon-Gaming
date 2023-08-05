@@ -49,7 +49,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  height: 22222222222222222000000000000000000000000000000000000000px;
 }
 
 a {
@@ -88,6 +87,10 @@ p,
   font-weight: 500;
   line-height: 30px;
   /* 150% */
+}
+
+.btn-pr {
+  background-color: #A2E1FB !important;
 }
 
 .Header_section {
@@ -138,6 +141,7 @@ p,
   justify-content: space-between;
   align-items: center;
   color: #3C354F;
+  font-weight: 600;
 }
 .Header_section nav .had_title ul .Youtube_icon img {
   width: 20px;
@@ -164,6 +168,9 @@ p,
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
+}
+.Bennar_section .ban_con .ban_title .btn-pr {
+  background: linear-gradient(180deg, #4EC5F7 100%, #A2E1FB 100%);
 }
 .Bennar_section .ban_con .ban_title h2 {
   margin-top: 200px;
@@ -193,6 +200,7 @@ p,
   text-transform: lowercase;
 }
 .Bennar_section .ban_con .icon_title h4 i {
+  color: #FF42A5;
   width: 24px;
   height: 24px;
 }
@@ -402,7 +410,7 @@ p,
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 50px 0px;
   background-color: #0B0223;
 }
 .Footer_section .career_content * {
@@ -423,18 +431,26 @@ p,
   font-weight: 800;
   font-size: 50px;
 }
-.Footer_section .career_content .fo_manu, .Footer_section .career_content .fo_social_link, .Footer_section .career_content .fo_imp_links {
+.Footer_section .career_content .had_img h1 span {
+  color: #FF42A5;
+}
+.Footer_section .career_content .fo_manu,
+.Footer_section .career_content .fo_social_link,
+.Footer_section .career_content .fo_imp_links {
   display: flex;
   text-align: center;
 }
-.Footer_section .career_content .fo_manu .fo_link, .Footer_section .career_content .fo_social_link .fo_link, .Footer_section .career_content .fo_imp_links .fo_link {
-  font-size: 30px;
+.Footer_section .career_content .fo_manu .fo_link,
+.Footer_section .career_content .fo_social_link .fo_link,
+.Footer_section .career_content .fo_imp_links .fo_link {
+  font-size: 20px;
   margin-left: 40px;
   font-weight: 600;
   color: #ffffff;
+  flex-wrap: wrap;
 }
 .Footer_section .career_content .fo_imp_links .fo_link {
-  font-size: 25px;
+  font-size: 20px;
 }
 .Footer_section .career_content .fo_social_link {
   display: flex;
@@ -443,8 +459,9 @@ p,
 }
 .Footer_section .career_content .fo_social_link i {
   margin-left: 30px;
-  font-size: 60px;
+  font-size: 50px;
 }
-.Footer_section .career_content .fo_link, .Footer_section .career_content i:hover {
+.Footer_section .career_content .fo_link,
+.Footer_section .career_content i:hover {
   color: #FF42A5;
 }/*# sourceMappingURL=style.css.map */

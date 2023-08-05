@@ -123,70 +123,281 @@ p,
 }
 
 
-@media screen and  (max-width: 599px){
-    .container{
-        padding: 10px;
+@media screen and (max-width: 599px) {
+    .container {
+        padding: 15px;
     }
+
     .Header_section {
-        padding: 30px;
-    
+        padding: 30px 0px;
+
         nav {
-            display: block; 
-            justify-content: space-between;
-            align-items: center;
-    
+            flex-direction: column;
+
             .had_img {
                 display: flex;
                 align-items: center;
-    
+
                 img {
-                    width: 80px;
-                }
-    
-                h1 {
-                    color: #0B0223;
-                    font-weight: 800;
-                    font-size: 30px;
-    
-                    span {
-                        color: $noyon;
-                        margin-left: 10px;
-                    }
+                    width: 100px;
                 }
             }
-    
+
             .had_title {
+                * {
+                    margin-top: 10px;
+                }
+
                 ul {
-                    display: flex;
-                    align-items: center;
-    
-                    a {
-                        margin-left: 20px;
-                        color: #3C354F;
-                        text-align: center;
-                        font-size: 18px;
-                        font-weight: 500;
+                    flex-direction: column;
+                }
+            }
+
+            .Youtube_icon {
+                margin-top: 15px;
+
+                * {
+                    margin-top: 0px;
+                }
+            }
+        }
+
+    }
+
+    .Bennar_section {
+
+        .ban_con {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+
+            .btn {
+                padding: 15px 30px !important;
+                display: flex;
+                gap: 20px;
+            }
+
+            .ban_title {
+                order: 1;
+
+                .ban_hot {
+                    margin-top: 20px;
+                    color: #0B0223;
+                    font-size: 40px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+
+                .ban_hon {
+                    font-size: 87px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+                    background-clip: text;
+                    color: #00000000;
+                }
+            }
+
+        }
+    }
+
+
+    .Gamer_section {
+        margin-top: 50px;
+
+        .gam_con {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: space-between;
+
+            * {
+                text-align: center;
+            }
+        }
+    }
+
+    .Online_Games_section {
+
+        .bors {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 25px;
+            .borx{
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .Instantly_section {
+        margin-top: 100px;
+
+        .Installs {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: space-between;
+
+            .int_decs {
+                display: flex;
+                justify-content: end;
+            }
+
+            .sab_conten {
+                max-width: 400px;
+                text-align: right;
+            }
+
+            .inst_imgs {
+                display: flex;
+                justify-content: end;
+
+                .img_main {
+                    position: relative;
+                    width: 70%;
+
+                    .man_img {
+                        width: 100%;
                     }
-    
-                    .Youtube_icon {
-                        margin-left: 20px;
-                        background: rgba(11, 2, 35, 0.10);
-                        padding: 15px;
-                        @include border-radius(8px);
+
+                    .img_sub {
                         display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        color: #3C354F;
-    
-                        img {
-                            width: 20px;
-                            margin-left: 10px;
+                        align-items: end;
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        top: 20%;
+                        right: 25%;
+
+                        .sub_img {
+                            width: 50%;
+                            height: 55%;
                         }
-    
                     }
                 }
             }
         }
+
+        #Installs {
+            justify-content: space-between;
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 200px;
+
+            .inst_imgs {
+                margin-top: 50px;
+                order: 1;
+            }
+        }
     }
-    
+
+    .Carear_section {
+    margin-top: 200px;
+    max-width: 100%;
+    background-color: #FF42A5;
+
+    .careers_containen {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        .career_desc {
+            display: flex;
+            margin-left: 0px;
+            max-width: 730px;
+            align-items: center;
+
+            .listed_feture {
+                margin-top: 40px;
+                max-width: 340px;
+                .items{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 15px;
+                }
+            }
+
+            .sec_desc {
+                font-size: 14px;
+                line-height: 30px;
+            }
+
+            * {
+                color: #ffffff;
+            }
+
+            .sec_desc {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.Footer_section {
+    .career_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0px;
+        background-color: #0B0223;
+        * {
+            color: #ffffff;
+            margin-top: 30px;
+        }
+
+        .had_img {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100px;
+            }
+
+            h1 {
+                color: #ffffff;
+                font-weight: 800;
+                font-size: 50px;
+            }
+        }
+
+        .fo_manu,
+        .fo_social_link,
+        .fo_imp_links {
+            display: flex;
+
+            text-align: center;
+
+            .fo_link {
+                font-size: 11px;
+                margin-left: 40px;
+                font-weight: 600;
+                color: #ffffff;
+            }
+        }
+
+        .fo_imp_links {
+            .fo_link {
+                font-size: 20px;
+            }
+
+        }
+
+        .fo_social_link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                margin-left: 30px;
+                font-size: 50px;
+            }
+        }
+
+        .fo_link,
+        i:hover {
+            color: $noyon;
+        }
+    }
+}
 }

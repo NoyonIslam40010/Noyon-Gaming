@@ -1,1 +1,311 @@
-/*# sourceMappingURL=responsive.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+img {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  padding: 0px 60px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.btn {
+  margin-top: 20px;
+  display: inline-flex;
+  padding: 21px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 48px;
+  background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+  border: none;
+}
+.btn a {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  font-family: "Work Sans", sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 22222222222222222000000000000000000000000000000000000000px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+button a {
+  text-decoration: none;
+}
+
+.color {
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: rgba(0, 0, 0, 0);
+}
+
+.color_2 {
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+}
+
+p,
+.items {
+  color: #534C64;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 150% */
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    padding: 15px;
+  }
+  .Header_section {
+    padding: 30px 0px;
+  }
+  .Header_section nav {
+    flex-direction: column;
+  }
+  .Header_section nav .had_img {
+    display: flex;
+    align-items: center;
+  }
+  .Header_section nav .had_img img {
+    width: 100px;
+  }
+  .Header_section nav .had_title * {
+    margin-top: 10px;
+  }
+  .Header_section nav .had_title ul {
+    flex-direction: column;
+  }
+  .Header_section nav .Youtube_icon {
+    margin-top: 15px;
+  }
+  .Header_section nav .Youtube_icon * {
+    margin-top: 0px;
+  }
+  .Bennar_section .ban_con {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .Bennar_section .ban_con .btn {
+    padding: 15px 30px !important;
+    display: flex;
+    gap: 20px;
+  }
+  .Bennar_section .ban_con .ban_title {
+    order: 1;
+  }
+  .Bennar_section .ban_con .ban_title .ban_hot {
+    margin-top: 20px;
+    color: #0B0223;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .Bennar_section .ban_con .ban_title .ban_hon {
+    font-size: 87px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: rgba(0, 0, 0, 0);
+  }
+  .Gamer_section {
+    margin-top: 50px;
+  }
+  .Gamer_section .gam_con {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Gamer_section .gam_con * {
+    text-align: center;
+  }
+  .Online_Games_section .bors {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 25px;
+  }
+  .Online_Games_section .bors .borx {
+    margin-top: 15px;
+  }
+  .Instantly_section {
+    margin-top: 100px;
+  }
+  .Instantly_section .Installs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Instantly_section .Installs .int_decs {
+    display: flex;
+    justify-content: end;
+  }
+  .Instantly_section .Installs .sab_conten {
+    max-width: 400px;
+    text-align: right;
+  }
+  .Instantly_section .Installs .inst_imgs {
+    display: flex;
+    justify-content: end;
+  }
+  .Instantly_section .Installs .inst_imgs .img_main {
+    position: relative;
+    width: 70%;
+  }
+  .Instantly_section .Installs .inst_imgs .img_main .man_img {
+    width: 100%;
+  }
+  .Instantly_section .Installs .inst_imgs .img_main .img_sub {
+    display: flex;
+    align-items: end;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 20%;
+    right: 25%;
+  }
+  .Instantly_section .Installs .inst_imgs .img_main .img_sub .sub_img {
+    width: 50%;
+    height: 55%;
+  }
+  .Instantly_section #Installs {
+    justify-content: space-between;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 200px;
+  }
+  .Instantly_section #Installs .inst_imgs {
+    margin-top: 50px;
+    order: 1;
+  }
+  .Carear_section {
+    margin-top: 200px;
+    max-width: 100%;
+    background-color: #FF42A5;
+  }
+  .Carear_section .careers_containen {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Carear_section .careers_containen .career_desc {
+    display: flex;
+    margin-left: 0px;
+    max-width: 730px;
+    align-items: center;
+  }
+  .Carear_section .careers_containen .career_desc .listed_feture {
+    margin-top: 40px;
+    max-width: 340px;
+  }
+  .Carear_section .careers_containen .career_desc .listed_feture .items {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  .Carear_section .careers_containen .career_desc .sec_desc {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .Carear_section .careers_containen .career_desc * {
+    color: #ffffff;
+  }
+  .Carear_section .careers_containen .career_desc .sec_desc {
+    margin-top: 30px;
+  }
+  .Footer_section .career_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px;
+    background-color: #0B0223;
+  }
+  .Footer_section .career_content * {
+    color: #ffffff;
+    margin-top: 30px;
+  }
+  .Footer_section .career_content .had_img {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Footer_section .career_content .had_img img {
+    width: 100px;
+  }
+  .Footer_section .career_content .had_img h1 {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 50px;
+  }
+  .Footer_section .career_content .fo_manu,
+  .Footer_section .career_content .fo_social_link,
+  .Footer_section .career_content .fo_imp_links {
+    display: flex;
+    text-align: center;
+  }
+  .Footer_section .career_content .fo_manu .fo_link,
+  .Footer_section .career_content .fo_social_link .fo_link,
+  .Footer_section .career_content .fo_imp_links .fo_link {
+    font-size: 11px;
+    margin-left: 40px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .Footer_section .career_content .fo_imp_links .fo_link {
+    font-size: 20px;
+  }
+  .Footer_section .career_content .fo_social_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Footer_section .career_content .fo_social_link i {
+    margin-left: 30px;
+    font-size: 50px;
+  }
+  .Footer_section .career_content .fo_link,
+  .Footer_section .career_content i:hover {
+    color: #FF42A5;
+  }
+}/*# sourceMappingURL=responsive.css.map */

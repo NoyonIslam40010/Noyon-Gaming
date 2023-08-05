@@ -76,7 +76,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    height: 2.2222222222222222e+55px;
 }
 
 
@@ -120,6 +119,10 @@ p,
     font-weight: 500;
     line-height: 30px;
     /* 150% */
+}
+
+.btn-pr {
+    background-color: #A2E1FB !important;
 }
 
 
@@ -178,6 +181,7 @@ p,
                     justify-content: space-between;
                     align-items: center;
                     color: #3C354F;
+                    font-weight: 600;
 
                     img {
                         width: 20px;
@@ -222,6 +226,10 @@ p,
                 }
             }
 
+            .btn-pr {
+                background: linear-gradient(180deg, #4EC5F7 100%, #A2E1FB 100%);
+            }
+
             h2 {
                 margin-top: 200px;
                 color: #0B0223;
@@ -240,6 +248,7 @@ p,
             }
         }
 
+
         .icon_title {
             display: block;
 
@@ -247,6 +256,7 @@ p,
                 margin: 0 a;
 
                 i {
+                    color: $noyon;
                     width: 24px;
                     height: 24px;
                 }
@@ -520,19 +530,20 @@ p,
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 20px;
+        padding: 50px 0px;
         background-color: #0B0223;
 
         * {
-            color: #ffffff;  
-             margin-top: 30px;
+            color: #ffffff;
+            margin-top: 30px;
         }
 
-        .had_img  {
+        .had_img {
             margin-top: 0;
             display: flex;
             align-items: center;
             justify-content: center;
+
             img {
                 width: 100px;
             }
@@ -541,39 +552,48 @@ p,
                 color: #ffffff;
                 font-weight: 800;
                 font-size: 50px;
+                span{
+                    color: $noyon;
+                }
             }
         }
-        
-        .fo_manu ,.fo_social_link ,.fo_imp_links{
+
+        .fo_manu,
+        .fo_social_link,
+        .fo_imp_links {
             display: flex;
 
             text-align: center;
-            .fo_link{
-                font-size: 30px;
+
+            .fo_link {
+                font-size: 20px;
                 margin-left: 40px;
                 font-weight: 600;
                 color: #ffffff;
+                flex-wrap: wrap;
             }
         }
 
-        .fo_imp_links{
-           .fo_link{
-            font-size: 25px;
-           }
+        .fo_imp_links {
+            .fo_link {
+                font-size: 20px;
+            }
 
         }
 
-        .fo_social_link{
+        .fo_social_link {
             display: flex;
             justify-content: center;
             align-items: center;
-            i{
+
+            i {
                 margin-left: 30px;
-                font-size: 60px;
+                font-size: 50px;
             }
         }
 
-        .fo_link,i:hover{
+        .fo_link,
+        i:hover {
             color: $noyon;
         }
     }
